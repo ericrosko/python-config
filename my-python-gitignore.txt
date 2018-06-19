@@ -1,6 +1,67 @@
 
 # ignore this file
-.gitignore
+#.gitignore
+
+#ignore temp folder
+temp/
+
+
+###############################
+# PyCharm (and other JetBrains IDEs)
+###############################
+
+# User-specific stuff
+# The workspace.xml holds your run configurations!  So if you
+# are working alone you may want to save all these files.  In a mult-
+# user environment you may want to ignore these files.  However, you will
+# need to re-add your run configurations after cloning.
+#.idea/**/workspace.xml
+#.idea/**/tasks.xml
+#.idea/**/dictionaries
+#.idea/**/shelf
+
+# Sensitive or high-churn files
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# CMake
+cmake-build-debug/
+cmake-build-release/
+
+# Mongo Explorer plugin
+.idea/**/mongoSettings.xml
+
+# File-based project format
+*.iws
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# Editor-based Rest Client
+.idea/httpRequests
 
 ###############################
 # some python settings for sublime text 3
@@ -79,6 +140,14 @@ coverage.xml
 
 # Django stuff:
 *.log
+local_settings.py
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
 
 # Sphinx documentation
 docs/_build/
@@ -86,7 +155,53 @@ docs/_build/
 # PyBuilder
 target/
 
+# Jupyter Notebook
+.ipynb_checkpoints
 
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+
+##################################
+# virtualenv
+##################################
+# I don’t want to check in the venv folder because
+# it can be 100MB.  Instead, just pip freeze > requirements.txt
+# and recreate the venv folder from scratch after cloning.
+# this assumes I will always call my virtual environment folder venv/
+##################################
+.venv
+venv/
+ENV/
+pip-selfcheck.json
+bin/
+include/
+lib/
+pyvenv.cfg
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# py.ttest
+.pytest_cache/
 
 ###############################
 # generic stuff
@@ -133,3 +248,9 @@ ehthumbs.db
 ######################
 *.out
 *.swp
+
+###############################
+# local password storage
+###############################
+.config/
+.config
